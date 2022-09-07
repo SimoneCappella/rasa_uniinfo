@@ -1,0 +1,54 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - bot_functions
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+  - text: "Hi bro, how you doing?"
+  - text: "Hello! Happy to have you here with me"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+  - text: "Don't be sad, life is beautiful"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+  - text: "This makes me happy aswell"
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "Goodby my friend"
+  - text: "Hope to see you soon, goodbye!"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa, and i am here to help you find out the informations you need about Università 
+  Politecnica delle Marche!"
+
+  utter_functions:
+  - text: "Here is a list of things i can help you with: \n 
+           - Taxes informations.\n
+           - How to enroll in the University.\n
+           - Informations about study plans and courses.\n
+           - Stage informations.\n
+           - Erasmus informations.\n
+           - Informations about our locations.\n
+           - Secretary opening time.\n
+           - Some video about our university.\n
+           What do you need?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
