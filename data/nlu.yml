@@ -66,33 +66,19 @@ nlu:
     - so good
     - so perfect
 
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
 - intent: bot_challenge
   examples: |
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+    - who are you?
+    - what are you?
     
 
 - intent: bot_functions
   examples: |
+    - functions
     - what do you do?
     - what are your functions?
     - what is your purpose?
@@ -102,3 +88,149 @@ nlu:
     - Can you help me?
     - I need some help
     - I have problems find out informations about the university
+
+- intent: bot_informations
+  examples: |
+    - give me some informations
+    - give me some informations please
+    - i need information about the university
+    - can you give me any information about the university?
+    - can you give me some informations?
+    - i need info
+    - can you give me some info?
+    - tell me about the university
+    - tell me about università politecnica delle marche
+    - tell me about univpm
+    - tell me some info
+    - give me informations
+    - give me info
+    - give me general info
+    - i need general informations
+
+- intent: taxes_info
+  examples: |
+    - what about taxes?
+    - i need help for taxes
+    - how to pay paxes
+    - taxes information
+    - informations about taxes
+    - need help for taxes
+    - taxes
+
+- intent: affirmative
+  examples: |
+    - yes
+    - yes, thank you
+    - yes, thanks
+    - yes thanks
+    - yup
+    - sì
+    - si
+
+- intent: negation
+  examples: |
+    - no
+    - no
+    - no 
+    - no, it didn't
+    - nop
+
+- intent: start
+  examples: |
+    - start
+    - begin
+
+
+- intent: out_of_scope
+  examples: |
+    - asdsvasd
+    - ahahahhaha
+    - let's go
+    - i don't know
+    - asssss
+    - asdasdasdasd
+    - lololololol
+    - pppppppppppppppppp
+    - lllllllllllllllll
+    - askdjhalskdjaskldalskdasd
+    - oirweioprpwoeirpoweirweirpoweiproiwer
+    - asdaasldkqwueqweasd
+
+- intent: enrolment
+  examples: |
+    - how do i enroll myself?
+    - information about enrolment
+    - enrolment
+    - how do i enter the university?
+    - immatricolazione
+    - come mi immatricolo?
+    - how do i subscribe to the university?
+    - how can i enroll myself?
+
+- intent: courses_info
+  examples: |
+    - study plans
+    - courses
+    - courses available
+    - study plans available
+    - what study plans are available?
+    - what courses are available?
+    - where can i find study plans?
+    - where can i see the courses?
+    - how many courses are there?
+    - what are study plans?
+
+- intent: stage_info
+  examples: |
+    - stage
+    - information about stages
+    - what can you tell me about stages
+    - what is a stage
+    - about stages
+
+- intent: erasmus_info
+  examples: |
+    - erasmus
+    - what about erasmus
+    - what can you tell me about eramsus?
+    - how does the erasmus work?
+    - and the erasmus?
+    - foreign study opportunity
+    - travel study
+    - study abroad
+    - about erasmus
+
+- intent: locations
+  examples: |
+    - where are the locations?
+    - what are your locations?
+    - and about the locations?
+    - where are your univeristies?
+    - what about locations?
+    - locations?
+    - about locations?
+
+- intent: secretary
+  examples: |
+    - what time does the secretary opens?
+    - secretary opening time.
+    - secretary informations.
+    - informations about the secretary.
+
+- intent: search
+  examples: |
+    - search video
+    - search
+
+- intent: help
+  examples: |
+    - help
+    - help me
+    - need help
+
+- intent: univpm_videos
+  examples: |
+    - show me some univpm videos
+    - show me univpm
+    - show me some videos about univpm
+    - univpm videos

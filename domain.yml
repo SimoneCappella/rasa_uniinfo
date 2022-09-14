@@ -1,32 +1,78 @@
 version: "3.1"
+config:
+    store_entities_as_slots: true
 
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-  - bot_functions
+  - greet:
+      use_entities: true
+  - goodbye:
+      use_entities: true
+  - affirm:
+      use_entities: true
+  - deny:
+      use_entities: true
+  - mood_great:
+      use_entities: true
+  - mood_unhappy:
+      use_entities: true
+  - bot_challenge:
+      use_entities: true
+  - bot_functions:
+      use_entities: true
+  - bot_informations:
+      use_entities: true
+  - start:
+      use_entities: true
+  - utter_more_help:
+      use_entities: true
+  - taxes_info:
+      use_entities: true
+  - affirmative:
+      use_entities: true
+  - negation:
+      use_entities: true
+  - enrolment:
+      use_entities: true
+  - courses_info:
+      use_entities: true
+  - stage_info:
+      use_entities: true
+  - erasmus_info:
+      use_entities: true
+  - locations:
+      use_entities: true
+  - secretary:
+      use_entities: true
+  - search:
+      use_entities: true
+  - help:
+      use_entities: true
+  - univpm_videos:
+      use_entities: true
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
-  - text: "Hi bro, how you doing?"
-  - text: "Hello! Happy to have you here with me"
+  - text: "Hey! Type /help for help!"
+  - text: "Hi bro. /help for help!"
+  - text: "Hello! Happy to have you here with me. /help for help!"
+  - text: "Welcome student! /help for help!"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-  - text: "Don't be sad, life is beautiful"
+  utter_start:
+  - text: "Hey, welcome to the UNIVPM help bot, i can help you find the informations you need!"
 
-  utter_did_that_help:
-  - text: "Did that help you?"
+  utter_did_help:
+  - text: "Did that help?"
+
+  utter_afterno:
+  - text: "I am so sorry, try asking something else."
 
   utter_happy:
   - text: "Great, carry on!"
-  - text: "This makes me happy aswell"
+  - text: "This makes me happy"
+
+  utter_afteryes:
+    - text: "I'm glad i helped you"
+    - text: "Nice!"
 
   utter_goodbye:
   - text: "Bye"
@@ -46,8 +92,52 @@ responses:
            - Erasmus informations.\n
            - Informations about our locations.\n
            - Secretary opening time.\n
-           - Some video about our university.\n
+           - Some video about our university. Ask me to show you some univpm video.\n
+           - You can search any video you want on youtube. Use 'search (video name)' or 'search video (video name)'
+           - Digit 'help' or 'help me' to learn how to activate the above functions.
            What do you need?"
+
+  utter_informations:
+    - text: "Nel 1548 il giurista Benvenuto Stracca, noto per essere stato il fondatore del diritto commerciale, inviò a papa Pio IV la richiesta di autorizzazione per l'apertura ad Ancona dell'Universitas studii generalis cuiuscum scientiae et facultatis; il 25 luglio 1562 il pontefice concesse l'autorizzazione all'apertura dell'Università, con le facoltà di diritto e di teologia e la possibilità di apertura anche di facoltà scientifiche; il primo priore fu proprio lo Stracca. L'università anconitana si ricollegava alla scuola di diritto attiva in città nel Medioevo, dal 1300 in poi.\n
+Gli studi universitari moderni ad Ancona iniziarono, invece, nel 1959 con l'istituzione della facoltà di economia e commercio, come sede distaccata dell'università di Urbino. L'università anconitana, fondata da Alfredo Trifogli, ricevette il riconoscimento da parte del Ministero dell'istruzione soltanto il 16 dicembre 1969, dando origine alla \"Libera università di Ancona\". All'inizio ospitava solo la facoltà di ingegneria, le cui lezioni iniziarono nel febbraio del 1970. Il 23 ottobre 1970 si avvia l'insegnamento della medicina e della chirurgia. Il 18 gennaio 1971 le viene riconosciuto lo status di università statale, che le fa assumere la denominazione di università degli Studi di Ancona; in questo stesso periodo si accorpa anche la facoltà di economia nata in precedenza. L'Ateneo si arricchisce della facoltà di agraria nel 1988 e della facoltà di scienze matematiche, fisiche e naturali tre anni dopo. Il 18 gennaio 2003 cambia la propria denominazione in Università Politecnica delle Marche."
+
+  utter_locations:
+    - text: "Le nostre sedi sono a: Ancona, Pesaro, Macerata, Fermo, Ascoli Piceno e San Benedetto del Tronto. 
+    La sede principale è quella di Ancona, dove sono il Rettorato e le sedi amministrative.
+    Per ulteriori informazioni visita il link: https://www.univpm.it/Entra/Sedi_dei_Corsi_di_Studio."
+
+  utter_help:
+    - text: "Hi, you can use all the /functions of this bot by asking me them in normal language! Plus, you can search for 
+    videos on youtube typing, for example, 'search funny videos' or 'search video milan highlights'. You can view video
+    about UNIVPM by asking it in the latest way i explained or asking me to show you some video about UNIVPM!"
+
+  utter_videos:
+    - text: "https://www.youtube.com/watch?v=PX93DRhMvGU"
+    - text: "https://www.youtube.com/watch?v=WptxB_EUPc8"
+    - text: "https://www.youtube.com/watch?v=pe9A7jS9Lp8"
+    - text: "https://www.youtube.com/watch?v=012FQPRW_C8"
+
+
+actions:
+  - utter_greet
+  - utter_did_help
+  - utter_happy
+  - utter_goodbye
+  - utter_iamabot
+  - utter_functions
+  - utter_informations
+  - utter_start
+  - action_taxes
+  - utter_afteryes
+  - utter_afterno
+  - utter_locations
+  - action_enrolment
+  - action_courses
+  - action_stage
+  - action_erasmus
+  - action_secretary
+  - action_search
+
 
 session_config:
   session_expiration_time: 60

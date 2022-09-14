@@ -9,25 +9,10 @@ stories:
   - intent: mood_great
   - action: utter_happy
 
-- story: sad path 1
+- story: start
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - intent: start
+  - action: utter_start
 
 - story: functions path
   steps:
@@ -40,3 +25,239 @@ stories:
   steps:
   - intent: bot_functions
   - action: utter_functions
+
+- story: info path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: bot_informations
+  - action: utter_informations
+
+- story: info path 2
+  steps:
+  - intent: bot_informations
+  - action: utter_informations
+
+- story: taxes path ok
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: taxes_info
+  - action: action_taxes
+  - action: utter_did_help
+  - intent: affirmative
+  - action: utter_afteryes
+
+- story: taxes path no
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: taxes_info
+  - action: action_taxes
+  - action: utter_did_help
+  - intent: negation
+  - action: utter_afterno
+
+- story: taxes path ok 2
+  steps:
+  - intent: taxes_info
+  - action: action_taxes
+  - action: utter_did_help
+  - intent: affirmative
+  - action: utter_afteryes
+
+- story: taxes path no 2
+  steps:
+  - intent: taxes_info
+  - action: action_taxes
+  - action: utter_did_help
+  - intent: negation
+  - action: utter_afterno
+
+- story: out of scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_functions
+
+- story: enrol path ok
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: enrolment
+  - action: action_enrolment
+  - action: utter_did_help
+  - intent: affirmative
+  - action: utter_afteryes
+
+- story: enrol path no
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: enrolment
+  - action: action_enrolment
+  - action: utter_did_help
+  - intent: negation
+  - action: utter_afterno
+
+- story: enrol path ok 2
+  steps:
+  - intent: enrolment
+  - action: action_enrolment
+  - action: utter_did_help
+  - intent: affirmative
+  - action: utter_afteryes
+
+- story: enrol path no 2
+  steps:
+  - intent: enrolment
+  - action: action_enrolment
+  - action: utter_did_help
+  - intent: negation
+  - action: utter_afterno
+
+- story: courses path ok
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: courses_info
+  - action: action_courses
+  - action: utter_did_help
+  - intent: affirmative
+  - action: utter_afteryes
+
+- story: courses path no
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: courses_info
+  - action: action_courses
+  - action: utter_did_help
+  - intent: negation
+  - action: utter_afterno
+
+- story: courses path ok 2
+  steps:
+  - intent: courses_info
+  - action: action_courses
+  - action: utter_did_help
+  - intent: affirmative
+  - action: utter_afteryes
+
+- story: courses path no 2
+  steps:
+  - intent: courses_info
+  - action: action_courses
+  - action: utter_did_help
+  - intent: negation
+  - action: utter_afterno
+
+- story: stage path ok
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: stage_info
+  - action: action_stage
+  - action: utter_did_help
+  - intent: affirmative
+  - action: utter_afteryes
+
+- story: stage path no
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: stage_info
+  - action: action_stage
+  - action: utter_did_help
+  - intent: negation
+  - action: utter_afterno
+
+- story: stage path ok 2
+  steps:
+  - intent: stage_info
+  - action: action_stage
+  - action: utter_did_help
+  - intent: affirmative
+  - action: utter_afteryes
+
+- story: stage path no 2
+  steps:
+  - intent: stage_info
+  - action: action_stage
+  - action: utter_did_help
+  - intent: negation
+  - action: utter_afterno
+
+- story: erasmus path ok
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: erasmus_info
+  - action: action_erasmus
+  - action: utter_did_help
+  - intent: affirmative
+  - action: utter_afteryes
+
+- story: erasmus path no
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: erasmus_info
+  - action: action_erasmus
+  - action: utter_did_help
+  - intent: negation
+  - action: utter_afterno
+
+- story: erasmus path ok 2
+  steps:
+  - intent: erasmus_info
+  - action: action_erasmus
+  - action: utter_did_help
+  - intent: affirmative
+  - action: utter_afteryes
+
+- story: erasmus path no 2
+  steps:
+  - intent: erasmus_info
+  - action: action_erasmus
+  - action: utter_did_help
+  - intent: negation
+  - action: utter_afterno
+
+- story: locations path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: locations
+  - action: utter_locations
+
+- story: locations path 2
+  steps:
+  - intent: locations
+  - action: utter_locations
+
+- story: secretary path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: secretary
+  - action: action_secretary
+
+- story: secretary path 2
+  steps:
+  - intent: secretary
+  - action: action_secretary
+
+- story: search path
+  steps:
+  - intent: search
+  - action: action_search
+
+- story: help path
+  steps:
+  - intent: help
+  - action: utter_help
+
+- story: univpm videos path
+  steps:
+  - intent: univpm_videos
+  - action: utter_videos

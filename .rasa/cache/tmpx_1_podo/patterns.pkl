@@ -1,0 +1,6 @@
+[
+  {
+    "name": "video",
+    "pattern": "(\\bBest\\ \\&\\ Worst\\ dogs\\ Trends\\b|\\bOur\\ Complete\\ Review\\ of\\ dogs\\b|\\bThe\\ Shocking\\ Truth\\ About\\ dogs\\b|\\bMythbusting\\ dogs\\b|\\bWhy\\ football\\ Has\\ Just\\ Gone\\ Viral\\b|\\bIt's\\ Time\\ to\\ Open\\ Up\\ About\\ football\\b|\\bTop\\ football\\ Trends\\ This\\ Year\\b|\\bThe\\ football\\ You've\\ Been\\ Waiting\\ For\\b|\\bMy\\ Thoughts\\ on\\ football\\b|\\bEverything\\ You\\ Need\\ to\\ Know\\ About\\ football\\b|\\bThe\\ Expert's\\ Guide\\ to\\ football\\b|\\bHow\\ Did\\ university\\ Rise\\ to\\ the\\ Top\\?\\b|\\bWhat\\ If\\ university\\ Didn't\\ Exist\\?\\b|\\bWhen\\ Did\\ university\\ Get\\ So\\ Famous\\?\\b|\\bHow\\ university\\ Broke\\ The\\ Internet\\b|\\bThe\\ Official\\ Guide\\ to\\ university\\b|\\bLearn\\ Why\\ university\\ is\\ on\\ the\\ Rise\\b|\\bThe\\ Untold\\ Story\\ of\\ university\\b|\\bUnivpm\\ videos\\b|\\bUNIVPM\\ università\\ politecnica\\ delle\\ marche\\ videos\\b|\\bUNIVPM\\ welcome\\b)"
+  }
+]
