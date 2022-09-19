@@ -261,3 +261,13 @@ stories:
   steps:
   - intent: univpm_videos
   - action: utter_videos
+
+- story: only_yes
+  steps:
+  - intent: affirmative
+  - action: utter_functions
+
+- story: only_no
+  steps:
+  - intent: negation
+  - action: utter_functions
